@@ -28,6 +28,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-12 col-md-4 col-xl-2 mt-4">
+                    <a class="btn btn-info" href="#reserveForm">Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>    
@@ -69,9 +72,78 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                </div>
             </div>
+            <!-- <div class="col-12 my-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Make a Reservation</h3>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                                    <div class="col-5 col-md-3">
+                                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="campsite-select" class="col-md-2 col-form-label">Campsite</label>
+                                    <div class="col-md-10">
+                                        <select class="form-control" id="campsite-select" name="campsite-select" rows="8">
+                                            <option value="">Please choose an option</option>
+                                            <option value="React Lake Campground">React Lake Campground</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="checkin-date" class="col-md-2 col-form-label">Check-in Date</label>
+                                    <div class="col-md-10">
+                                        <input type="date" class="form-control" id="checkin-date" name="check in date" rows="8"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="checkout-date" class="col-md-2 col-form-label">Check-out Date</label>
+                                    <div class="col-md-10">
+                                        <input type="date" class="form-control" id="checkout-date" name="check out date" rows="8"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary">Submit Reservation Request</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -86,6 +158,43 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white"> Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row">
+                                <label for="numCampers" class="col-12 col-sm col-form-label">Number of Campers</label>
+                                <div class="col-12 col-sm">
+                                    <select class="form-control" id="numCampers" name="Number of Campers">
+                                        <option value="">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group mt-3">
+                                <label for="date" class="col-12 col-sm col-form-label">Date</label>
+                                <div class="col-12 col-sm">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                            <div class="row form-group mt-3">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="site-footer">
